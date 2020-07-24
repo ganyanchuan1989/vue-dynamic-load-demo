@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>|
-      <router-link to="/frame">Frame</router-link>
+      <router-link to="/">Dynamic load Component </router-link> |
+      <router-link to="/frame">Frame</router-link>|
+      <router-link to="/about">dynamic mounted</router-link>|
     </div>
     <keep-alive>
       <router-view />

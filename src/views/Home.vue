@@ -20,7 +20,7 @@ export default {
     loadScript() {
       const _this = this;
       // http://127.0.0.1:5500/dist1/demo.html
-      this.doLoadJs("http://127.0.0.1:5500/dist1/myLib.umd.js", function() {
+      this.doLoadJs("http://127.0.0.1:5500/test/myLib.umd.js", function() {
         window.Vue.component("myLib", window.myLib);
         _this.comps.push("myLib");
       });
