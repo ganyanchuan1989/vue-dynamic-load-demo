@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import DynamicComponet from "../views/DynamicComponet.vue";
 import Frame from "../views/Frame.vue";
 
 Vue.use(VueRouter);
@@ -8,8 +8,8 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "DynamicComponet",
+    component: DynamicComponet
   },
   {
     path: "/frame",
@@ -17,13 +17,13 @@ const routes = [
     component: Frame
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/DynamicMounted",
+    name: "DynamicMounted",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import(/* webpackChunkName: "about" */ "../views/DynamicMounted.vue")
   }
 ];
 
