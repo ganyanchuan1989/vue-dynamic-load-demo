@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import DynamicComponet from "../views/DynamicComponet.vue";
 import Frame from "../views/Frame.vue";
+import Other from "../views/Other.vue";
+import A from "../views/A.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +17,11 @@ const routes = [
     path: "/frame",
     name: "Frame",
     component: Frame
+  },
+  {
+    path: "/other",
+    name: "Other",
+    component: Other
   },
   {
     path: "/DynamicMounted",

@@ -4,6 +4,8 @@
       <router-link to="/">Dynamic load Component </router-link> |
       <router-link to="/frame">Frame</router-link>|
       <router-link to="/DynamicMounted">dynamic mounted</router-link>|
+      <router-link to="/other">other</router-link>|
+      <router-link to="/a">A</router-link>|
     </div>
     <keep-alive>
       <router-view />
